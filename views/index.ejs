@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title2 %></h1>
+    <%- title2%>
+    <p>Welcome to <%= title %></p>
+  <%
+     users.forEach(function(user)
+     {
+         %>
+         <%=user.name%>
+   <%  })
+   %>
+
+  <% include nav %>
+  test pm2 watching
+  </body>
+</html>
